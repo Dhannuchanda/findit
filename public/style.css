@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f8f9fa;
+}
+h1 { color: #007bff; }
+input, select, button {
+    margin: 5px;
+    padding: 8px;
+}
+div { margin: 10px auto; padding: 15px; border: 1px solid #ccc; width: 300px; background: white; }
+img { margin: 5px; border-radius: 5px; }

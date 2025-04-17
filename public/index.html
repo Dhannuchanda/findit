@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FindIt - Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+
+<h1>🎒 FindIt - Campus Lost & Found Portal</h1>
+
+<div id="login-section">
+    <button onclick="login()">Login With Google</button>
+</div>
+
+<div id="post-section" style="display:none;">
+    <h2>Post Lost / Found Item</h2>
+    <input type="text" id="itemName" placeholder="Item Name">
+    <input type="text" id="description" placeholder="Description">
+    <select id="status">
+        <option value="Lost">Lost</option>
+        <option value="Found">Found</option>
+    </select>
+    <input type="file" id="imageInput">
+    <button onclick="postItem()">Post Item</button>
+</div>
+
+<h2>🔍 Search Items</h2>
+<input type="text" id="searchBox" onkeyup="searchItems()" placeholder="Search by name...">
+<div id="itemList"></div>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-storage-compat.js"></script>
+
+</body>
+</html>
